@@ -1,0 +1,17 @@
+{
+  "name": "cms",
+  "version": "1.0.1",
+  "description": "Nodejs CMS Application",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Tochukwu Ugwu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.1",
+    "mongoose": "^5.12.2",
+    "nodemon": "^2.0.7"
+  }
+}
