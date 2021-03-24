@@ -3,4 +3,16 @@ module.exports = {
         res.render('admin/index');
 
     },
+    getPosts: (req, res) => {
+        res.send('All Posts');
+
+    },
+    submitPosts: (req, res) => {
+        res.send('Post submitted');
+
+    },
+    createPosts: (req, res) => {
+        res.send('Create Post Route');
+
+    },
 }

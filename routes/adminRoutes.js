@@ -12,5 +12,13 @@ router.all('/*', (req, res, next) => {
 router.route('/')
     .get(adminController.index);
 
+router.route('/posts')
+    .get(adminController.getPosts)
+    .post(adminController.submitPosts);
+
+
+router.route('/posts/create')
+    .get(adminController.createPosts);
+
 
 module.exports = router;
