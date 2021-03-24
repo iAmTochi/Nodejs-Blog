@@ -23,7 +23,8 @@ mongoose.connect(mongoDbUrl, {useNewUrlParser: true, useUnifiedTopology: true})
 //Configure express
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, './public')));
+app.use('/admin/posts', express.static(path.join(__dirname, 'public')))
 
 
 //Setup view Engine To Use Handlebars

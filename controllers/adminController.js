@@ -12,7 +12,7 @@ module.exports = {
 
     },
     createPosts: (req, res) => {
-        res.send('Create Post Route');
+        res.render('admin/posts/create');
 
     },
 }
